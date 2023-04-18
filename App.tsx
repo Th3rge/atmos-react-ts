@@ -4,12 +4,13 @@ import { getRandomBoolean, subDate } from './data';
 
 //tipagem
 interface Msgtype {
-  value: boolean | Function;
+  value: boolean;
   id: number;
-  mac?: Date | string;
-  register?: boolean | Function;
+  register?: boolean;
+  mac?: Date;
 }
 
+//corpo da Mensagem
 const [msg, setMsg] = React.useState<Msgtype>({
   value: getRandomBoolean(),
   id: 2,
@@ -69,7 +70,6 @@ export default function App() {
   return (
     <div>
       <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
     </div>
   );
 }
