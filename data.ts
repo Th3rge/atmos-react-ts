@@ -6,7 +6,7 @@ export function getRandomBoolean(): boolean {
 }
 
 //Função para calcular a data do último login
-export const subDate = (): number => {
+export const subDate = (): void => {
   const currentDate: Date = new Date();
   const oldDate: Date = new Date('2023-04-14'); // Data último login
 
@@ -22,6 +22,4 @@ export const subDate = (): number => {
   hourDifference > 1
     ? alert(`Você se manteve ${hourDifference} horas desconectado`)
     : 'Desconectado há menos de 1 hora';
-
-  return hourDifference;
 };
