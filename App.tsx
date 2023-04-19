@@ -11,7 +11,7 @@ export default function App() {
     id: 2,
   });
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     runDiagram(msg, setMsg);
   }, []);
 
